@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Delete</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody id="expenses-table"></tbody>
+  </table>
+  <form id="add-expense-form" onsubmit="addExpense()">
+    <input type="date" name="date" placeholder="Date">
+    <input type="text" name="category" placeholder="Category">
+    <input type="number" name="amount" placeholder="Amount">
+    <button type="submit">Add Expense</button>
+  </form>
+  <script src="script.js">
+  </script>
+</body>
+</html>
